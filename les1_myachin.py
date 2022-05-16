@@ -20,88 +20,88 @@ print(f'Ежемесячный платеж в рублях: {x}')
 
 # Задание 2
 
-# time = int(input('На сколько секунд ты задержишь дыхание: '))
-# hour = time // 3600
-# minute = time % 3600 // 60
-# sec = time % 3600 % 60
-# x = f'Секундомер показывает {hour:02}:{minute:02}:{sec:02},'
-# if time <= 60:
-#     print(f'{x} моя бабушка может больше')
-# elif 60 < time <= 240:
-#     print(f'{x} перед нами серьезный представитель своего вида!')
-# elif 240 < time <= 600:
-#     print(f'{x} тебе достаточно и одного легкого. Псс, давай заработаем?')
-# elif 600 < time <= 1342:
-#     print(f'{x} Том Ситаис, это ты?')
-# else:
-#     print(f'{x} пфф, рассказывай ХD')
+time = int(input('На сколько секунд ты задержишь дыхание: '))
+hour = time // 3600
+minute = time % 3600 // 60
+sec = time % 3600 % 60
+x = f'Секундомер показывает {hour:02}:{minute:02}:{sec:02},'
+if time <= 60:
+    print(f'{x} моя бабушка может больше')
+elif 60 < time <= 240:
+    print(f'{x} перед нами серьезный представитель своего вида!')
+elif 240 < time <= 600:
+    print(f'{x} тебе достаточно и одного легкого. Псс, давай заработаем?')
+elif 600 < time <= 1342:
+    print(f'{x} Том Ситаис, это ты?')
+else:
+    print(f'{x} пфф, рассказывай ХD')
 
 # Задание 3
 
-# num = input('Хочешь странный фокус? Введи цифру или число: ')
-# sum = int(num) + int(num+num) + int(num + num + num)
-# print(f'Вуопля: {sum}. Круто, наверное... я пошел.')
+num = input('Хочешь странный фокус? Введи цифру или число: ')
+sum = int(num) + int(num+num) + int(num + num + num)
+print(f'Вуопля: {sum}. Круто, наверное... я пошел.')
 
 # Задание 4
 
 # Честно, сначала я прям прикурил над этой задачей (минус мозг). Громоздко получилось, но работает.
 
-# num = int(input('Ваше число: '))
-# last = num % 10
-# last_2 = num // 10 % 10
-# while num > 0:
-#     if last > last_2:
-#         num = num // 10
-#         last_2 = num // 10 % 10
-#     else:
-#         num = num // 10
-#         last = num % 10
-#         last_2 = num // 10 % 10
-# print(f'Его вершина {last}')
+num = int(input('Ваше число: '))
+last = num % 10
+last_2 = num // 10 % 10
+while num > 0:
+    if last > last_2:
+        num = num // 10
+        last_2 = num // 10 % 10
+    else:
+        num = num // 10
+        last = num % 10
+        last_2 = num // 10 % 10
+print(f'Его вершина {last}')
 
-# num = int(input('Ваше число: ')) # А вот здесь уже более короткое решение сделал.
-# x = 0
-# while num > 0:
-#     last = num % 10
-#     num = num // 10
-#     if last > x:
-#         x = last
-#     else:
-#         num = num // 10
-# print(f'Его пик {x}')
+num = int(input('Ваше число: ')) # А вот здесь уже более короткое решение сделал.
+x = 0
+while num > 0:
+    last = num % 10
+    num = num // 10
+    if last > x:
+        x = last
+    else:
+        num = num // 10
+print(f'Его пик {x}')
 
 # Задание 5
 
-# rev = int(input('Выручка: '))
-# costs = int(input('Издержки: '))
-# res = rev - costs
-# if res > 0:
-#     print(f'Прибыль фирмы составила: {res}')
-# elif res < 0:
-#     print(f'Потери фирмы составили: {res}')
-# else:
-#     print('Выручка = убытки')
+rev = int(input('Выручка: '))
+costs = int(input('Издержки: '))
+res = rev - costs
+if res > 0:
+    print(f'Прибыль фирмы составила: {res}')
+elif res < 0:
+    print(f'Потери фирмы составили: {res}')
+else:
+    print('Выручка = убытки')
 
 # Задание 6
 
-# rev = int(input('Выручка: '))
-# costs = int(input('Издержки: '))
-# res = rev - costs
-# if res > 0:
-#     print(f'Рентабельность выручки составила: {res / rev}')
-#     num = int(input('Количество сотрудников в фирме: '))
-#     print(f'Прибыль фирмы в рассчете на одного сотрудника составила: {res / num}')
-# else:
-#     print(f'Потери фирмы составили: {res}')
+rev = int(input('Выручка: '))
+costs = int(input('Издержки: '))
+res = rev - costs
+if res > 0:
+    print(f'Рентабельность выручки составила: {res / rev}')
+    num = int(input('Количество сотрудников в фирме: '))
+    print(f'Прибыль фирмы в рассчете на одного сотрудника составила: {res / num}')
+else:
+    print(f'Потери фирмы составили: {res}')
 
 # Задание 7 (Дополнительно)
 
-# a = int(input('a = '))
-# b = int(input('b = '))
-# d = 1
-# print(f'{d}-й день: {a}')
-# while a <= b:
-#     a = a + a / 100 * 10
-#     d += 1
-#     print(f'{d}-й день: {a:.2f} км')
-# print(f'Ответ: на {d} день спортсмен достиг результата - не менее {b} км.')
+a = int(input('a = '))
+b = int(input('b = '))
+d = 1
+print(f'{d}-й день: {a}')
+while a <= b:
+    a = a + a / 100 * 10
+    d += 1
+    print(f'{d}-й день: {a:.2f} км')
+print(f'Ответ: на {d} день спортсмен достиг результата - не менее {b} км.')
