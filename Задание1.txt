@@ -1,0 +1,27 @@
+Hello, Vova
+Your age: 30
+ 
+Hello, Superman
+Your age: 134
+ 
+Hello, Saitama
+Your age: 25
+ 
+Hello, Вова
+Your age: 30
+ 
+Hello, Danya
+Your age: 34
+ 
+Hello, Katya
+Your age: 
+ 
+Hello, Vova
+Your age: 44
+ 
+Hello, Katya
+Your age: 32
+ 
+Hello, Kira
+Your age: 36
+ 
